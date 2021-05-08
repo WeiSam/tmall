@@ -15,7 +15,7 @@ import java.util.List;
  * @date 2021/5/7 17:20
  */
 @Slf4j
-public class DaoService  extends BaseTest {
+public class DaoServiceTest extends BaseTest {
 
     @Autowired
     CouponService couponService;

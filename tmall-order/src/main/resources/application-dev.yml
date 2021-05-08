@@ -8,3 +8,12 @@ spring:
         username: root
         password: gosuncn
         enable: true
+    cloud:
+        nacos:
+            config:
+                server-addr: ${nacos.ip}
+            discovery:
+                server-addr: ${nacos.ip}
+
+nacos:
+    ip: 127.0.0.1:8848

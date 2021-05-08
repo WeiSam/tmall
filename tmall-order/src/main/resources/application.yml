@@ -1,6 +1,3 @@
-server:
-  port:18880
-
 spring:
   application:
     name: tmall-order
@@ -26,3 +23,7 @@ mybatis-plus:
     cache-enabled: false
     call-setters-on-nulls: true
     jdbc-type-for-null: 'null'
+
+
+server:
+  port: 18881

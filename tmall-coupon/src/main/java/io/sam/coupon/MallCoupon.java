@@ -12,7 +12,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2021/5/7 16:33
  */
 @Slf4j
-@EnableFeignClients
+@EnableFeignClients(basePackages = "io.sam.rpc.service")
 @EnableDiscoveryClient
 @SpringBootApplication
 public class MallCoupon {
