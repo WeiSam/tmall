@@ -1,0 +1,19 @@
+spring:
+    datasource:
+        # 当前数据源操作类型
+        type: com.alibaba.druid.pool.DruidDataSource
+        # mysql驱动类
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/gulimall_sms?useUnicode=true&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+        username: root
+        password: gosuncn
+        enable: true
+    cloud:
+        nacos:
+            config:
+                server-addr: ${nacos.ip}
+            discovery:
+                server-addr: ${nacos.ip}
+
+nacos:
+    ip: 127.0.0.1:8848
